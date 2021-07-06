@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>nthChild.html</title>
+    <style type="text/css">
+      li:not(.special) {
+        border: 1px solid red;
+      }
+      #myList>li:nth-child(1) {
+        background-color: blue;
+        color: white;
+      }
+      #myList>li:nth-child(2n) {
+        background-color: red;
+        color: white;
+      }
+      li:hover {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>nth Child demo</h1>
+    <ul id="myList">
+      <li>one</li>
+      <li class="special">two</li>
+      <li>three</li>
+      <li>four</li>
+    </ul>
+
+  </body>
+</html>		
