@@ -1,0 +1,18 @@
+h1 {
+  color: black;
+  font-size: 300%;
+  transition: color 1s ease-in;
+}
+h1:hover {
+  color: red;
+}
+#box {
+  transition: all 1s ease-in;
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  border: 1px black solid;
+}
+#box:hover {
+  transform: rotate(180deg);
+}

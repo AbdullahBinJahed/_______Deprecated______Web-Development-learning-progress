@@ -1,0 +1,17 @@
+body {
+  background-image: url("/apoyo.jpg");
+  background-repeat: no-repeat;
+}
+h1 {
+  color: rgba(0, 0, 0, .3);
+}
+#box {
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  height: 100px;
+  width: 100px;
+  border: 1px red solid;
+  background-color: white;
+  opacity: .3;
+}

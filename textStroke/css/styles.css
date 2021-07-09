@@ -1,0 +1,5 @@
+h2 {
+  color: yellow;
+  -webkit-text-stroke: 2px red;
+  font-size: 300%;
+}

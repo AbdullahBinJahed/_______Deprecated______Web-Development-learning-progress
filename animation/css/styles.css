@@ -1,0 +1,60 @@
+@keyframes anim {
+  0% {
+    left: 0px;
+    top: 0px;
+    background-color: #ffffff;
+  }
+  25% {
+    left: 100px;
+    top: 0px;
+    background-color: #777777;
+  }
+  50% {
+    left: 100px;
+    top: 100px;
+    background-color: #000000;
+  }
+  75% {
+    left: 0px;
+    top: 100px;
+    background-color: #777777;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    background-color: #ffffff;
+  }
+}
+-webkit-@keyframes anim {
+  0% {
+    left: 0px;
+    top: 0px;
+    background-color: #ffffff;
+  }
+  25% {
+    left: 100px;
+    top: 0px;
+    background-color: #777777;
+  }
+  50% {
+    left: 100px;
+    top: 100px;
+    background-color: #000000;
+  }
+  75% {
+    left: 0px;
+    top: 100px;
+    background-color: #777777;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    background-color: #ffffff;
+  }
+}
+#box {
+  position: absolute;
+  border: 1px black solid;
+  -webkit-animation: anim 5s linear infinite;
+  animation: anim 5s linear infinite;
+}
