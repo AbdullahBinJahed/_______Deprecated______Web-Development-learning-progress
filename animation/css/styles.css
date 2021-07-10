@@ -3,26 +3,31 @@
     left: 0px;
     top: 0px;
     background-color: #ffffff;
+    transform: rotateY(0deg);
   }
   25% {
     left: 100px;
     top: 0px;
     background-color: #777777;
+    transform: rotateY(90deg);
   }
   50% {
     left: 100px;
     top: 100px;
     background-color: #000000;
+    transform: rotateY(180deg);
   }
   75% {
     left: 0px;
     top: 100px;
     background-color: #777777;
+    transform: rotateY(270deg);
   }
   100% {
     left: 0px;
     top: 0px;
     background-color: #ffffff;
+    transform: rotateY(360deg);
   }
 }
 -webkit-@keyframes anim {
