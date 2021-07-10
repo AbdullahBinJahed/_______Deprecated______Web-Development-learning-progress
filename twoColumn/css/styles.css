@@ -1,0 +1,26 @@
+#head {
+  text-align: center;
+  border-bottom: 5px black double;
+}
+
+#left {
+  float: left;
+  width: 20%;
+  padding-left: 1%;
+}
+
+#right{
+  border-left: 2px gray solid;
+  float: left;
+  width: 75%;
+  margin-left: 1%;
+  padding-left: 1%;
+}
+
+#footer {
+  border-top: 5px gray double;
+  float: left;
+  clear: both;
+  width: 100%;
+  text-align: center;
+}

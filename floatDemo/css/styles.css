@@ -1,0 +1,7 @@
+p {
+  border: 2px black solid;
+}
+.floated {
+  float: left;
+  width: 50%;
+}
