@@ -1,0 +1,28 @@
+#menu ul {
+  margin-left: -2.5em;
+}
+
+#menu li {
+  list-style-type: none;
+  width: 7em;
+  text-align: center;
+  float: left;
+}
+
+#menu a{
+  text-decoration: none;
+  color: black;
+  display: block;
+  background-color: #EEEEFF;
+  box-shadow: 5px 5px 5px gray;
+  margin-bottom: 2px;
+  margin-right: 2px;
+  border-radius: 5px;
+  border: 3px #EEEEFF outset;
+}
+
+#menu a:hover {
+  background-color: #DDDDEE;
+  box-shadow: 3px 3px 3px gray;
+  border: none;
+}

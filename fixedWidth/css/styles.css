@@ -1,0 +1,33 @@
+#header {
+  background-color: #E2E393;
+  border-bottom: 3px black solid;
+  text-align: center;
+  width: 800px;
+  padding-top: 1em;
+}
+
+#left {
+  float: left;
+  width: 200px;
+  clear: left;
+  border-right: 1px black solid;
+  height: 30em;
+  overflow: auto;
+  padding-right: .5em;
+}
+
+#right {
+  float: left;
+  width: 570px;
+  height: 30em;
+  overflow: auto;
+  padding-left: .5em;
+}
+
+#footer {
+  width: 800px;
+  text-align: center;
+  background-color: #E2E393;
+  border-top: 3px black double;
+  clear: both;
+}

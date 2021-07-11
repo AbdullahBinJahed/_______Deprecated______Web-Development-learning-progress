@@ -1,0 +1,38 @@
+/* vertMenu.css */
+/* unindent entire list */
+#menu ul {
+  margin-left: -2.5em;
+}
+
+/* set li as buttons */
+#menu li {
+  list-style-type: none;
+  border: 1px black solid;;
+  width: 10em;
+  background-color: #EEEEEE;
+  text-align: center;
+  box-shadow: 5px 5px 5px gray;
+}
+
+/* display anchors as buttons */ 
+#menu a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+/* flash white on anchor hover */
+#menu a:hover {
+  background-color: white;
+}
+
+/* collapse menus */
+#menu li ul {
+  display: none;
+}
+
+/* show submenus on hover */
+#menu li:hover > ul {
+  display: block;
+  margin-left: -2em;
+}
