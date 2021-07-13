@@ -1,0 +1,42 @@
+h1 {
+  text-align: center;
+}
+
+fieldset {
+  background-color: #EEEEFF;
+  width: 25em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  float: left;
+  width: 10em;
+  clear: left;
+  margin-left: 4em;
+}
+
+input {
+  float: left;
+  width: 10em;
+}
+
+textArea {
+  float: left;
+  clear: left;
+  width: 25em;
+  margin-left: 3em;
+}
+
+button {
+  float: left;
+  clear: left;
+  width: 10em;
+  margin-left: 10em;
+  margin-top: 1em;
+}
+
+dt {
+  font-weight: bold;
+  border-top: 3px black groove;
+}

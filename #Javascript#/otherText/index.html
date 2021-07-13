@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang = "en-US"> 
+
+  <head>
+    <meta charset = "UTF-8">
+    <title>otherText.html</title>
+<script type = "text/javascript">
+      function processForm(){
+        //grab input from form
+        var txtNormal = document.getElementById("txtNormal");
+        var pwd = document.getElementById("pwd");
+        var hidden = document.getElementById("hidden");
+        var txtArea = document.getElementById("txtArea");
+        var normal = txtNormal.value;
+        var password = pwd.value;
+        var secret = hidden.value;
+        var bigText = txtArea.value;
+        //create output
+        var result = "";
+        result += "<dl> \n";
+        result += "  <dt>normal<\/dt> \n";
+        result += "  <dd>" + normal + "<\/dd> \n";
+        result += " \n";
+        result += "  <dt>password<\/dt> \n";
+        result += "  <dd>" + password + "<\/dd> \n";
+        result += " \n";
+        result += "  <dt>secret<\/dt> \n";
+        result += "  <dd>" + secret + "<\/dt> \n";
+        result += "   \n";
+        result += "  <dt>big text<\/dt> \n";
+        result += "  <dd>" + bigText + "<\/dt> \n";
+        result += "<\/dl> \n";
+        var output = document.getElementById("output");
+        output.innerHTML = result;
+      } // end function
+</script>
+    <link rel = "stylesheet" href = "css/styles.css" />
+  </head>
+  <body>
+    <h1>Text Input Devices</h1>
+    <form action = "">
+      <fieldset>
+        <label>Normal Text field</label>
+        <input type = "text"
+          id = "txtNormal" />
+        <label>Password field</label>
+        <input type = "password"
+          id = "pwd" />
+        <label>Hidden</label>
+        <input type = "hidden"
+          id = "hidden"
+          value = "I can't tell you" />
+        <textarea id = "txtArea"
+          rows = "10"
+          cols = "40">
+          This is a big text area.
+          It can hold a lot of text.
+        </textarea>
+        <button type = "button"
+          onclick = "processForm()">
+          Click Me
+        </button>
+      </fieldset>
+    </form>
+    <div id = "output">
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,27 @@
+h1 {
+  text-align: center;
+}
+
+fieldset{
+  width: 20em;
+  background-color: #EEEEFF;
+  margin-left: auto;
+  margin-right: auto;     
+}
+      
+input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+} 
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}
