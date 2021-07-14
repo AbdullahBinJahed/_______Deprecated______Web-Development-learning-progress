@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <title>ifElseIf.html</title>
+    <meta charset = "UTF-8" />
+<script type = "text/javascript">
+    function checkName(){
+      lblOutput = document.getElementById("lblOutput");
+      txtInput = document.getElementById("txtInput");
+
+      userName = txtInput.value;
+
+      if (userName == "Tim Berners-Lee"){
+        lblOutput.innerHTML = "Thanks for inventing HTML!";
+      } else if (userName == "Al Gore") {
+        lblOutput.innerHTML = "Thanks for inventing the Internet";
+      } else if (userName == "Hakon Wium Lie") {
+        lblOutput.innerHTML = "Thanks for inventing CSS";
+      } else {
+        lblOutput.innerHTML = "Do I know you?";
+      } // end if
+    } // end function
+</script>
+<style>
+    label, input, button {
+      display: block;
+      width: 80%;
+      margin: auto;
+      text-align: center;
+    }
+    fieldset {
+      width: 80%;
+      margin: auto;
+    }
+</style>
+  </head>
+
+  <body>
+    <h1>If - Else If Demo</h1>
+
+    <form action = "">
+      <fieldset>
+        <label id = "lblOutput">Please enter your name</label>
+        <input type = "text"
+          id = "txtInput" 
+          value = "Tim Berners-Lee" />
+        <button type = "button"
+          onclick = "checkName()">
+          click me
+        </button>
+      </fieldset>
+    </form>
+  </body>
+</html>
+
