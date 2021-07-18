@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>radioGroup.html</title>
+    <script type="text/javascript" charset="utf-8">
+      function fight()
+      {
+        var weapon = document.getElementsByName("weapon");
+        for (i = 0; i < weapon.length; i++)
+        {
+          currentWeapon = weapon[i];
+          if (currentWeapon.checked)
+           var selectedWeapon = currentWeapon.value;
+        }
+        var output = document.getElementById("output");
+        var response = "<h2>You defeated the dragon with a "
+        response += selectedWeapon + "</h2> \n"
+        output.innerHTML = response;
+      }
+    </script>
+</head>
+
+<body>
+  <h1>With what weapon will you fight the dragon?</h1>
+  <form action="">
+    <fieldset>
+      <input type="radio"
+             name="weapon"
+             id="radSpoon"
+             value="spoon"
+             checked="checked" />
+      <label for="radSpoon">Spoon</label>
+      <input type="radio"
+             name="weapon"
+             id="radFlower"
+             value="flower" />
+      <label for="radFlower">Flower</label>
+      <input type="radio"
+             name="weapon"
+             id="radNoodle"
+             value="wet noodle" />
+      <label for="radNoodle">Wet Noodle</label>
+      <button type="button"
+              onclick="fight()">
+        fight the dragon
+      </button>
+    </fieldset>
+  </form>
+  <div id="output">
+  </div>
+</body>
+
+</html>

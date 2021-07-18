@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>validate.html</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="text/javascript" charset="utf-8">
+      function validate()
+      {
+        //get inputs
+        name = document.getElementById("txtName").value;
+        email = document.getElementById("txtEmail").value;
+        phone = document.getElementById("txtPhone").value;
+        
+        //create an empty error message
+        errors = "";
+        
+        //check name - It simply needs to exist
+        if (name == "")
+          errors += "please supply a name \n";
+        
+        //check email
+        emailRE = /^.+@.+\..{2,4}$/;
+        if(email.match(emailRE))
+        {
+          //console.log("email match");
+          //do nothing
+        } else
+        {
+          //console.log("email not a match");
+          errors += "please check email address \n"
+        }
+        
+        //check phone number
+        phoneRE = /^\(\d{3}\) * \d{3}-\d{4}$/;
+        if (phone.match(phoneRE))
+        {
+          //console.log("phone matches");
+          //do nothing
+        } else
+        {
+          //console.log("phone problem");
+          errors += "please check phone #\n";
+        }
+        
+        //check for errors
+        if (errors == "")
+        {
+          alert("now processing data");
+          //process the form
+        } else
+        {
+          alert(errors);
+        }
+      }
+    </script>
+</head>
+
+<body>
+  <h1>Validation With Regular Expressions</h1>
+  <form action="">
+    <fieldset>
+      <label>Name</label>
+      <input type="text"
+             value=""
+             id="txtName" />
+      <label>Email</label>
+      <input type="text"
+             value=""
+             id="txtEmail" />
+      <label>Phone Number <br />
+      (ddd) ddd-dddd</label>
+      <input type="text"
+             value="(000) 000-0000"
+             id="txtPhone" />
+      <button type="button"
+              onclick="validate()">
+        submit
+      </button>
+    </fieldset>
+  </form>
+</body>
+
+</html>

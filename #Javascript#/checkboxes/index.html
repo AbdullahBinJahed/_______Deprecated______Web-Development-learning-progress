@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>checkboxes.html</title>
+    <script type="text/javascript" charset="utf-8">
+      function order()
+      {
+        //get variables
+        var chkPepperoni = document.getElementById("chkPepperoni");
+        var chkMushroom = document.getElementById("chkMushroom");
+        var chkSausage = document.getElementById("chkSausage");
+        var output = document.getElementById("output");
+        var result = "<ul> \n";
+        if(chkPepperoni.checked)
+          result += "<li>" + chkPepperoni.value + "</li> \n";
+        if(chkMushroom.checked)
+          result += "<li>" + chkMushroom.value + "</li> \n";
+        if(chkSausage.checked)
+          result += "<li>" + chkSausage.value + "</li> \n";
+        result += "</ul> \n"
+        output.innerHTML = result;
+      }
+    </script>
+</head>
+
+<body>
+  <h1>What do you want on your pizza?</h1>
+  <form action="">
+    <fieldset>
+      <input type="checkbox"
+             id="chkPepperoni"
+             value="pepperoni" />
+      <label for="chkPepperoni">Pepperoni</label>
+      <input type="checkbox"
+             id="chkMushroom"
+             value="mushrooms" />
+      <label for="chkMushroom">Mushrooms</label>
+      <input type="checkbox"
+             id="chkSausage"
+             value="sausage" />
+      <label for="chkSausage">Sausage</label>
+      <button type="button"
+              onclick="order()">
+        Order Pizza
+      </button>
+    </fieldset>
+  </form>
+  <h2>Your order:</h2>
+  <div id="output">
+  </div>
+</body>
+
+</html>
