@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iamge.html</title>
+    <style type="text/css">
+      .hidden
+      {
+        display: none;
+      }
+    </style>
+    <script type="text/javascript" charset="utf-8">
+      function draw()
+      {
+        var drawing = document.getElementById("surface");
+        var con = drawing.getContext("2d");
+        var goofyPic = document.getElementById("goofyPic");
+        con.drawImage(goofyPic, 0, 0, 50, 50); //param(imageObject, x, y, width, height);
+        
+        var image2 = new Image();
+        image2.src = "andyGoofy.gif";
+        con.drawImage(image2, 100, 100, 70, 50);
+      }
+    </script>
+</head>
+
+<body onload="draw()">
+  <img class="hidden"
+       id="goofyPic"
+       src="andyGoofy.gif"
+       alt="Goofy pic of Andy" />
+  
+  <canvas id="surface"
+          height="400"
+          width="400">
+    <p>Canvas not Supported</p>
+  </canvas>
+</body>
+
+</html>

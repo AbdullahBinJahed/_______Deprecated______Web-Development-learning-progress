@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>quad.html</title>
-    <script type="text/javascript">
+    <title>bezierCurve.html</title>
+    <script type="text/javascript" charset="utf-8">
       var drawing;
       var con;
       
@@ -17,24 +17,25 @@
         con.strokeStyle = "black";
         con.lineWidth = "5";
         con.beginPath();
-        con.moveTo(10, 190);
-        con.quadraticCurveTo(100, 10, 190, 190);
+        con.moveTo(10, 10);
+        con.bezierCurveTo(100, 10, 100, 190, 190, 190); //param(controlPoint1X, controlPoint1Y, controlPoint2X, controlPoint2Y, endingPointX, endingPointY);
         con.stroke();
         con.closePath();
         
         //mark beginning and end with blue
-        drawDot(10, 190, "blue");
+        drawDot(10, 10, "blue");
         drawDot(190, 190, "blue");
         
         //mark control points with red
         drawDot(100, 10, "red");
+        drawDot(100, 190, "red");
       }
       
       function drawDot(x, y, color)
       {
         con.fillStyle = color;
         con.beginPath();
-        con.arc(x, y, 10, 0, 2 * Math.PI, true);
+        con.arc(x, y, 5, 0, Math.PI * 2, true);
         con.fill();
         con.closePath();
       }
@@ -42,7 +43,7 @@
 </head>
 
 <body onload="draw()">
-  <h1>Quadratic path demo</h1>
+  <h1>Bezier path demo</h1>
   <canvas id = "surface"
           height = "200"
           width = "200">

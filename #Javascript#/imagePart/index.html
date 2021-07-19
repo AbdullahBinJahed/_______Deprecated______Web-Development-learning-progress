@@ -1,0 +1,41 @@
+
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <title>image.html</title>
+  <meta charset = "UTF-8" />
+  <style type = "text/css">
+    .hidden{
+      display: none;
+    }
+  </style>
+  <script type = "text/javascript">
+    var goofyPic = new Image();
+    goofyPic.src = "images/andyGoofy.gif";
+    goofyPic.onload = draw;
+    function draw()
+    {
+      var drawing = document.getElementById("drawing");
+      var con = drawing.getContext("2d");
+      con.drawImage(goofyPic, 60, 70, 90, 90, 0, 0, 150, 150);
+    }
+    
+  </script>
+</head>
+
+<body onload = "draw()">
+  <h1>Image in canvas</h1>
+
+  <img class = "hidden"
+       id = "goofyPic"
+       src = "andyGoofy.gif"
+       alt = "Goofy pic of me" />
+
+  <canvas id = "drawing"
+          height = "400"
+          width = "400">
+    <p>Canvas not supported</p>
+  </canvas>
+
+</body>
+</html>
