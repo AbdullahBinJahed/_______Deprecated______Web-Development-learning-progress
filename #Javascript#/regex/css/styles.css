@@ -1,0 +1,38 @@
+h1
+{
+  text-align: center;
+}
+
+fieldset
+{
+  width: 20em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label
+{
+  float: left;
+  width: 10em;
+  clear: left;
+}
+
+input
+{
+  float: left;
+}
+
+button
+{
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7em;
+}
+
+form p
+{
+  background-color: #FFFF99;
+  text-align: center;
+}

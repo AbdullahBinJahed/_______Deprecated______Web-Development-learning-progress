@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>rectangle.html</title>
+    <script type="text/javascript" charset="utf-8">
+      function draw()
+      {
+        var drawing = document.getElementById("surface");
+        var con = drawing.getContext("2d");
+        
+        con.fillStyle = "red";
+        con.strokeStyle = "green";
+        con.lineWidth = 5;
+        
+        con.fillRect(10, 10, 180, 80);
+        con.strokeRect(10, 100, 180, 80);
+      }
+    </script>
+</head>
+
+<body onload="draw()">
+  <canvas id="surface"
+          width="200"
+          height="200">
+    No chole canvas tag tor mobile e lol
+  </canvas>
+</body>
+
+</html>

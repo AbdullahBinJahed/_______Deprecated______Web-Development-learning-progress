@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>basicCanvas.html</title>
+    <script type="text/javascript" charset="utf-8">
+      function draw()
+      {
+        var canvas = document.getElementById("surface");
+        if (canvas.getContext)
+        {
+          var con = canvas.getContext('2d');
+          con.fillStyle = "rgb(255, 0, 0)";
+          con.fillRect(50, 50, 50, 50); // param(x, y, width, height) from top-left of the screen
+        }
+      }
+    </script>
+</head>
+
+<body onload="draw()">
+  <canvas id="surface"
+          width="200"
+          height="200">
+    <p>Your browser does not support the canvas tag...</p>
+  </canvas>
+</body>
+
+</html>

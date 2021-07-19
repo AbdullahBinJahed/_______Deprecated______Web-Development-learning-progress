@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>shadow.html</title>
+    <style type="text/css">
+      body
+      {
+        background-color: #CCCCCC;
+      }
+    </style>
+    <script type="text/javascript" charset="utf-8">
+      function draw()
+      {
+        var drawing = document.getElementById("surface");
+        var con = drawing.getContext("2d");
+        
+        //clear background
+        con.fillStyle = "white";
+        con.fillRect(0, 0, 200, 200);
+        
+        //draw font in red
+        con.fillStyle = "red";
+        con.font = "18pt sans-serif";
+        
+        //add shadows
+        con.shadowOffsetX = 3;
+        con.shadowOffsetY = 3;
+        con.shadowColor = "gray";
+        con.shadowBlur = 5;
+        con.fillText("Canvas Rocks!", 5, 100);
+      }
+    </script>
+</head>
+
+<body onload="draw()">
+  <canvas id="surface"
+          width="200"
+          height="200">
+    <p>Canvas not supported!</p>
+  </canvas>
+</body>
+
+</html>
