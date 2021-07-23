@@ -1,7 +1,7 @@
-var audioList = new Array("music/[Magia_Record].mp3", "music/Cossack_Lullaby.mp3", "music/Nippon_Egao.mp3", "music/Nyanpasu.mp3", "music/Yume_wo_Minai.mp3");
+var audioList = new Array("[Magia_Record]", "Cossack_Lullaby", "Nippon_Egao", "Nyanpasu", "Yume_wo_Minai");
 var index = 0;
 var playState = false;
-var audio = new Audio(audioList[0]);
+var audio = new Audio("music/" + audioList[0] + ".mp3");
 
 for (var i = 0; i < 3; i++)
 {
@@ -25,7 +25,7 @@ function audioPlay(text)
         audio.pause();
         audio = null;
       }
-      audio = new Audio(audioList[index]);
+      audio = new Audio("music/" + audioList[index] + ".mp3");
       audio.play();
       playState = true;
       break;
@@ -51,7 +51,7 @@ function audioPlay(text)
         audio.pause();
         audio = null;
       }
-      audio = new Audio(audioList[index]);
+      audio = new Audio("music/" + audioList[index] + ".mp3");
       audio.play();
       playState = true;
       break;
