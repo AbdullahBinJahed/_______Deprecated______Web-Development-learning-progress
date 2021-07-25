@@ -5,23 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>text.html</title>
-    <script type="text/javascript" charset="utf-8">
-      function draw()
-      {
-        var drawing = document.getElementById("surface");
-        var con = drawing.getContext("2d");
-        
-        //clear background
-        con.fillStyle = "white";
-        con.fillRect(0, 0, 200, 200);
-        
-        //draw font in red
-        con.fillStyle = "red";
-        con.font = "20pt sans-serif";
-        con.fillText("Canvas Rocks!", 5 , 100-50);
-        con.strokeText("Canvas Rocks!", 5, 130-50);
-      }
-    </script>
+    <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body onload="draw()">

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>radio_group.html</title>
+    <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+  <h1>With what weapon will you fight the dragon?</h1>
+  <form action="">
+    <fieldset>
+      <input type="radio"
+             name="weapon"
+             id="radSpoon"
+             value="spoon"
+             checked="checked" />
+      <label for="radSpoon">Spoon</label>
+      <input type="radio"
+             name="weapon"
+             id="radFlower"
+             value="flower" />
+      <label for="radFlower">Flower</label>
+      <input type="radio"
+             name="weapon"
+             id="radNoodle"
+             value="wet noodle" />
+      <label for="radNoodle">Wet Noodle</label>
+      <button type="button"
+              onclick="fight()">
+        fight the dragon
+      </button>
+    </fieldset>
+  </form>
+  <div id="output">
+  </div>
+</body>
+
+</html>
