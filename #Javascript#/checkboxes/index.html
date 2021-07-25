@@ -5,25 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>checkboxes.html</title>
-    <script type="text/javascript" charset="utf-8">
-      function order()
-      {
-        //get variables
-        var chkPepperoni = document.getElementById("chkPepperoni");
-        var chkMushroom = document.getElementById("chkMushroom");
-        var chkSausage = document.getElementById("chkSausage");
-        var output = document.getElementById("output");
-        var result = "<ul> \n";
-        if(chkPepperoni.checked)
-          result += "<li>" + chkPepperoni.value + "</li> \n";
-        if(chkMushroom.checked)
-          result += "<li>" + chkMushroom.value + "</li> \n";
-        if(chkSausage.checked)
-          result += "<li>" + chkSausage.value + "</li> \n";
-        result += "</ul> \n"
-        output.innerHTML = result;
-      }
-    </script>
+    <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
